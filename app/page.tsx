@@ -97,44 +97,9 @@ export default function Page() {
 
       <main id="home">
         <section className="hero hero--property">
-          <div className="hero__motion" aria-hidden="true">
-            <svg className="hero__motion-svg" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-              <defs>
-                <radialGradient id="prpA" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#8a97a8" stopOpacity="0.55" />
-                  <stop offset="100%" stopColor="#8a97a8" stopOpacity="0" />
-                </radialGradient>
-                <radialGradient id="prpB" cx="50%" cy="50%" r="50%">
-                  <stop offset="0%" stopColor="#5f6f86" stopOpacity="0.5" />
-                  <stop offset="100%" stopColor="#5f6f86" stopOpacity="0" />
-                </radialGradient>
-              </defs>
-              <circle className="blob blob--a" cx="420" cy="250" r="430" fill="url(#prpA)" />
-              <circle className="blob blob--b" cx="1140" cy="640" r="470" fill="url(#prpB)" />
-              <g className="hero__motif" stroke="rgba(190,201,214,0.10)" strokeWidth="1">
-                <line x1="120" y1="0" x2="120" y2="900" />
-                <line x1="300" y1="0" x2="300" y2="900" />
-                <line x1="480" y1="0" x2="480" y2="900" />
-                <line x1="660" y1="0" x2="660" y2="900" />
-                <line x1="840" y1="0" x2="840" y2="900" />
-                <line x1="1020" y1="0" x2="1020" y2="900" />
-                <line x1="1200" y1="0" x2="1200" y2="900" />
-                <line x1="1380" y1="0" x2="1380" y2="900" />
-                <line x1="0" y1="150" x2="1440" y2="150" />
-                <line x1="0" y1="320" x2="1440" y2="320" />
-                <line x1="0" y1="490" x2="1440" y2="490" />
-                <line x1="0" y1="660" x2="1440" y2="660" />
-              </g>
-              <g className="hero__motif" fill="none" stroke="rgba(205,215,228,0.26)" strokeWidth="1.6">
-                <rect x="250" y="470" width="150" height="430" />
-                <rect x="430" y="360" width="120" height="540" />
-                <rect x="600" y="540" width="170" height="360" />
-                <rect x="820" y="300" width="130" height="600" />
-                <rect x="1000" y="500" width="150" height="400" />
-                <rect x="1190" y="410" width="120" height="490" />
-              </g>
-            </svg>
-          </div>
+          <video className="hero__video" autoPlay muted loop playsInline poster="/images/property-hero-poster.jpg" aria-hidden="true">
+            <source src="/videos/property-hero.mp4" type="video/mp4" />
+          </video>
           <div className="hero__overlay" />
           <div className="hero__content">
             <div className="hero__copy hero__copy--animate">
